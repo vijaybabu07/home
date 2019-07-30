@@ -18,6 +18,7 @@ public class Actionsss {
 		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\WD\\jars\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://naukri.com");
+		//driver.get("https://www.virtuosoft.eu/code/bootstrap-dropdown-hover/");
 		driver.manage().window().maximize();
 		Actions a=new Actions(driver);
 		WebElement we=driver.findElement(By.xpath("/html/body/div[2]/div/ul/li[3]/a/div"));

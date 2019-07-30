@@ -11,12 +11,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebTable2 {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.gecko.driver", "D:\\selenium\\WD\\jars\\geckodriver.exe");
-		WebDriver driver=new FirefoxDriver();
-		/*System.setProperty("webdriver.ie.driver", "D:\\selenium\\WD\\jars\\IEDriverServer.exe");
+		/*System.setProperty("webdriver.gecko.driver", "E:\\Sel\\Jars\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();*/
+		/*System.setProperty("webdriver.ie.driver", "E:\\Sel\\Jars\\IEDriverServer.exe");
 		WebDriver driver=new InternetExplorerDriver();*/
-		/*System.setProperty("webdriver.chrome.driver", "D:\\selenium\\WD\\jars\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();*/
+		System.setProperty("webdriver.chrome.driver", "E:\\Sel\\Jars\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 		driver.get("http://money.rediff.com");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[@id='energy']")).click();
